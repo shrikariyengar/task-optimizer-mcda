@@ -155,7 +155,9 @@ def main():
             score =  currentTask.calculatePriority(w_date, w_difficulty, w_time, w_impact, min_time, max_time, min_due_date, max_due_date)
             st.success(f"Number {i+1}: {currentTask.task_name} --- Priority Score: {score:.2f}")
 
+        st.write("Hi")
         continueInput = st.selectbox("Would you like to input new assignments in? ", ["YES", "NO"])
+    
 
 if __name__ == "__main__":
     main()
