@@ -156,8 +156,9 @@ def main():
             st.success(f"Number {i+1}: {currentTask.task_name} --- Priority Score: {score:.2f}")
 
         
-        continueInput = st.selectbox("Would you like to input new assignments in? ", ["YES", "NO"])
-    
+        if st.button("Reset and Input New tasks"):
+            st.rerun()
+        
 
 if __name__ == "__main__":
     main()
