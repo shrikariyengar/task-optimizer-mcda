@@ -154,18 +154,18 @@ def main():
             currentTask = allTasks[i]
             score =  currentTask.calculatePriority(w_date, w_difficulty, w_time, w_impact, min_time, max_time, min_due_date, max_due_date)
             st.success(f"Number {i+1}: {currentTask.task_name} --- Priority Score: {score:.2f}")
-        
+
+        continueInput = st.selectbox("Would you like to input new assignments in? ", ["YES", "NO"])
 
 if __name__ == "__main__":
     main()
 
-st.selectbox
 
 
 #To run
 #python3 -m streamlit run main.py
 
 #To update changes: 
-"""git add .
-git commit -m "Describe your changes here"
-git push origin main"""
+#git add .
+#git commit -m "Describe your changes here"
+#git push origin main"""
