@@ -160,7 +160,13 @@ if __name__ == "__main__":
     main()
 
 st.write("HI")
+st.write("Bye")
 
 
 #To run
 #python3 -m streamlit run main.py
+
+#To update changes: 
+"""git add .
+git commit -m "Describe your changes here"
+git push origin main"""
