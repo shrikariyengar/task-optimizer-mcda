@@ -159,8 +159,7 @@ def main():
 if __name__ == "__main__":
     main()
 
-st.write("HI")
-st.write("Bye")
+st.selectbox
 
 
 #To run
