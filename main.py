@@ -158,6 +158,8 @@ def main():
         
         if st.button("Reset and Input New tasks"):
             st.rerun()
+
+        st.write("HI")
         
 
 if __name__ == "__main__":
