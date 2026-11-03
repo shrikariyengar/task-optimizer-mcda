@@ -67,7 +67,7 @@ def main():
     
     with st.container(border = True):
         st.markdown("### Adjusting Weights/Importance")
-        st.caption("NOTE: THESE SELECTIONS WILL INFLUENCE CALCULATIONS AND THE ORDER OF IMPORTANCE: TO UPDATE THESE, PLEASE TYPE 'change' AT ANY POINT")
+        st.caption("NOTE: THESE SELECTIONS WILL INFLUENCE CALCULATIONS AND THE ORDER OF IMPORTANCE:")
     
     col1, col2, col3, col4 = st.columns(4)
     with col1:
@@ -77,7 +77,7 @@ def main():
         w_difficulty = st.selectbox("Would you like the difficulty to be low, medium, high, or of critical importance? ", ["LOW","MEDIUM","HIGH","CRITICAL"])
 
     with col3:
-        w_time = st.selectbox("Would you like the time left to be low, medium, high, or of critical importance? ", ["LOW","MEDIUM","HIGH","CRITICAL"])
+        w_time = st.selectbox("Would you like the time to complete the task be low, medium, high, or of critical importance? ", ["LOW","MEDIUM","HIGH","CRITICAL"])
     
     with col4:
         w_impact = st.selectbox("Would you like the impact it will have on your grades to be low, medium, high, or of critical importance? ", ["LOW","MEDIUM","HIGH","CRITICAL"])
